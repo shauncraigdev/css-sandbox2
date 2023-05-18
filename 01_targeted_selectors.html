@@ -11,6 +11,25 @@
     div>p {
       background: #ddd;
     }
+
+    /* Directly after */
+    div+p {
+      background: #333;
+      color: #fff;
+    }
+
+    /* By attribute */
+    a[target] {
+      background: #ff0000;
+      color: #fff;
+    }
+
+    /* Specific attribute values */
+    input[type='text'],
+    input[type='email'] {
+      width: 100%;
+      margin-bottom: 5px;
+    }
   </style>
 </head>
 
@@ -29,6 +48,19 @@
   </div>
 
   <p>Lorem ipsum dolor sit amet.</p>
+
+  <a href="">Page 1</a>
+  <a href="" target="_self">Page 2</a>
+  <a href="https://duckduckgo.com" target="_blank">DuckDuckGo</a>
+
+  <br>
+  <br>
+
+  <form action="">
+    <input type="text" placeholder="name">
+    <input type="email" placeholder="email">
+    <input type="submit" placeholder="submit">
+  </form>
 </body>
 
 </html>
